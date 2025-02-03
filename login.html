@@ -1,0 +1,54 @@
+  <form method="get" action="javascript: void(0);" id="login-form" class="login-form" autocomplete="off" role="main">
+  <h1 class="a11y-hidden">Login Form</h1>
+<link rel="stylesheet" href="style2.css">
+<h2><center><b>LOGIN</center></b></h2>
+  <div>
+    <label class="label-email">
+      <input type="Username" class="text" name="Username" placeholder="Username" id= "user" tabindex="1" required />
+      <span class="required"><b>Username</b></span>
+    </label>
+  </div>
+  <input type="checkbox" name="show-password" class="show-password a11y-hidden" id="show-password" tabindex="3" />
+  <label class="label-show-password" for="show-password">
+    <span><b>Show Password</b></span>
+  </label>
+  <div>
+    <label class="label-password">
+      <input type="text" class="text" name="password" placeholder="Password" id="pass" tabindex="2" required />
+      <span class="required"><b>Password</b></span>
+    </label>
+  </div>
+<div class="email">
+<br></br>
+<center><button onclick="check()"> <a href="homepage.html">
+ Login </a> </button></center>
+<br></br>
+   <a href="#"><b>Forgot password?</b></a>
+</div>
+  <figure aria-hidden="true">
+    <div class="person-body"></div>
+    <div class="neck skin"></div>
+    <div class="head skin">
+      <div class="eyes"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="hair"></div>
+    <div class="ears"></div>
+    <div class="shirt-1"></div>
+    <div class="shirt-2"></div>
+  </figure>
+<script>
+function check()
+{
+let username = document.getElementById("user").value;
+let password = document.getElementById("pass").value;
+let uname = localStorage.getItem("username");
+let pass = localStorage.getItem("password");
+if(username == uname && password==pass)
+{alert("you are valid");
+window.location.href="file:///C:/Users/bcomb2411/Documents/homepage.html";
+}
+else{ alert("intruder");}
+}
+</script>
+</form>

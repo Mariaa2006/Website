@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+<h1><center><b>REGISTRATION FORM</center></b></h1>
+<center><h2><I>Please fill out this form to register</I></h2></center>
+<center><img src="shutterstock_1396638995.webp"alt="Ann Maria"width=350 height=250></center>
+<hr></hr>
+<br></br>
+<P><b>Name:</b></p>
+<input type = "Name">
+<br></br>    
+<P><b>DOB:</b> </P>
+<input type="Date">
+<br></br>
+<p><b>Age:</b> </p>
+<input type = "number">
+<br></br>
+<p><b> Gender:</b> </p>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<br></br>
+<p><b> Nationality:</b></p>
+<input type="Name">
+<br></br>
+<p><b>Address:</b> </p>
+<textarea> </textarea>
+<br></br>
+<p><b>Phone No:</b></p>
+<input type="number">
+<br></br>
+<p><b>Email:</b></p>
+<input type="Email" id="user">
+<br></br>
+<p><b>Password:</b> </p>
+<input type="password" id="pass">
+<br></br>
+<p><b>Confirm Password:</b></p>
+<input type="Password">
+<br></br>
+<ul>
+  <li><h2>How did you hear about our platform?</h2></li>
+  <li>Friends</li>
+  <li>Social Media</li>
+  <li>Influencers</li>
+</ul>
+<input type="Name">
+<br></br>
+<p><b>What is your prefered style?</b></p>
+<select name="Social Media" id="Preferred Style">
+<option value="Minimalist">Minimalist</option>
+<option value="Bold &Statement Pieces">"Bold & Statement Pieces</option>
+<option value="Classic & Timeless">Classic & Timeless</option>
+<option value="Trendy">Trendy</option>
+</select>
+<br></br>
+<P><b>What features are you most looking forward in our platform?</b></p>
+<select name="Social Media" id="Features">
+<option value="High Quality">High Quality</option>
+<option value="Easy Return">Easy Return</option>
+<option value="Detailed Product Description">Detailed Product Description</option>
+<option value="Customer reviews">Customer Reviews</option>
+</select>
+<br></br>
+<P><b>Are you interested in recieving updates from our platform?</b></p>
+<select name="Social Media" id="Recieving Updates">
+<option value="Yes">yes</option>
+<option value="No">no</option>
+</select>
+<br></br>
+<P><b>What device do you prefer to use to access our platform?</b></p>
+<select name="Social Media" id="Preferred Device">
+<option value="Mobile Phone">Mobile Phone</option>
+<option value="Laptop">Laptop</option>
+<option value="Tablet">Tablet</option>
+<option value="Desktop">Desktop</option>
+</select>
+<br></br>
+<P><b>How important is data privacy to you when using Social Media?</b></p>
+<select name="Social Media" id="Data Privacy">
+<option value="Very Important">Very Important</option>
+<option value="Somewhat Important">Somewhat Important</option>
+<option value="Not Very Important">Not Very Important</option>
+</select>
+<br></br>
+<button onclick="abc()" ><a href="login.html">Submit </a> </button>
+<script>
+function abc()
+{
+let username = document.getElementById("user");
+localStorage.setItem("username",username.value);
+let password=document.getElementById("pass");
+localStorage.setItem("password",password.value);
+alert(localStorage.getItem("username"));
+alert(localStorage.getItem("password"));
+ }
+</script>
+
+
+<p><b>THANK YOU</b></p>
+<hr></hr>
+</body>
+</html>
